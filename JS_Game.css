@@ -1,0 +1,13 @@
+.box{
+    background: yellowgreen;
+    font-size: 24px;
+    width: 100px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 25px;
+  }
+
+.cards{
+    display:flex;
+    justify-content:center;
+}
