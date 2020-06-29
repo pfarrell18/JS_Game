@@ -1,13 +1,161 @@
+html{
+    background-color: rgb(179, 221, 242)
+}
+div img{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
 .box{
-    background: yellowgreen;
-    font-size: 24px;
-    width: 100px;
+    background-color: transparent;
+    width: 150px;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 25px;
-  }
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+    perspective: 1000px;
+    transform: scale(1);
+    transform-style: preserve-3d;
 
+}
+
+.box:hover{
+    transform: scale(0.90);
+    transition: transform 0.5s;
+}
+
+.box.flip{
+    transform:rotateY(180deg)
+}
 .cards{
     display:flex;
     justify-content:center;
+    flex-wrap: wrap;
+    perspective: 2000px;
+}
+
+h1{
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    color: white;
+
+}
+
+
+.front-face, .back-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+.back-face{
+    transform: rotateY(180deg);
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    color: black;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 14px;
+    text-align: center;
+}
+
+h3{
+    padding: 2px 2px; 
+    background-color: white;
+    
+}
+
+.front-face{
+    background-color:white;
+    background-image: url(ChicagoStar.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+/* Images */
+.bean > .back-face {
+    background-image: url(bean1.png);
+    background-size: 110%;
+    
+}
+
+.bahai > .back-face {
+    background-image: url(bahai.jpg);
+    background-size: 100%;
+}
+
+.chinatown > .back-face {
+    background-image: url(chinatown1.png);
+    background-size: 120%;
+    background-position-y:center
+}
+
+.point > .back-face {
+    background-image: url(point1.png);
+    background-size: 130%;
+}
+
+.wicker > .back-face {
+    background-image: url(wicker.jpg);
+    background-size: 150%;
+    background-position: center;
+ 
+}
+
+.el > .back-face {
+    background-image: url(el.jpg);
+    background-size: 100%
+
+}
+.garfield > .back-face {
+    background-image: url(garfield.png);
+    background-size: 120%;
+}
+
+.pilsen > .back-face {
+    background-image: url(pilsen.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+.river > .back-face{
+    background-image: url(river.jpg) ;
+    background-size: 130%;
+    background-position-y: bottom;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: red;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    justify-content: center;
+}
+
+button{
+    background-color: black;
+    background: white; 
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    
 }
