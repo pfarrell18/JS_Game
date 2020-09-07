@@ -142,7 +142,7 @@ function getMatchResult(card1, card2) {
 }
 
 function checkIfAllFlipped(){
-    if (STATE.matched.length==1){
+    if (STATE.matched.length==9){
         var span = document.getElementsByClassName("close")[0];
         score = document.createElement("h1")
         score.innerHTML = `You Won! Your Score is ${STATE.points}!`
