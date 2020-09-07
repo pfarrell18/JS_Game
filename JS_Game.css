@@ -72,7 +72,7 @@ h3{
 
 .front-face{
     background-color:white;
-    background-image: url(ChicagoStar.png);
+    background-image: url(Images/ChicagoStar.png);
     border-radius: 10px;
     background-position: center;
     background-size: 70%;
@@ -81,52 +81,52 @@ h3{
 
 /* Images */
 .bean > .back-face {
-    background-image: url(bean1.png);
+    background-image: url(Images/bean1.png);
     background-size: 110%;
     
 }
 
 .bahai > .back-face {
-    background-image: url(bahai.jpg);
+    background-image: url(Images/bahai.jpg);
     background-size: 100%;
 }
 
 .chinatown > .back-face {
-    background-image: url(chinatown1.png);
+    background-image: url(Images/chinatown1.png);
     background-size: 120%;
     background-position-y:center
 }
 
 .point > .back-face {
-    background-image: url(point1.png);
+    background-image: url(Images/point1.png);
     background-size: 130%;
 }
 
 .wicker > .back-face {
-    background-image: url(wicker.jpg);
+    background-image: url(Images/wicker.jpg);
     background-size: 150%;
     background-position: center;
  
 }
 
 .el > .back-face {
-    background-image: url(el.jpg);
+    background-image: url(Images/el.jpg);
     background-size: 100%
 
 }
 .garfield > .back-face {
-    background-image: url(garfield.png);
+    background-image: url(Images/garfield.png);
     background-size: 120%;
 }
 
 .pilsen > .back-face {
-    background-image: url(pilsen.jpg);
+    background-image: url(Images/pilsen.jpg);
     background-size: 150%;
     background-position: center;
 }
 
 .river > .back-face{
-    background-image: url(river.jpg) ;
+    background-image: url(Images/river.jpg) ;
     background-size: 130%;
     background-position-y: bottom;
 }
